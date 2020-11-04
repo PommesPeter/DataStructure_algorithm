@@ -5,9 +5,9 @@
 
 ## Datastructure Processor Tablet
 
-- [ ] Experiment 1
-- [ ] Experiment 2
-- [ ] Experiment 3
+- [x] Experiment 1
+- [x] Experiment 2
+- [x] Experiment 3
 - [ ] Experiment 4
 - [ ] Experiment 5
 - [ ] Experiment 6
