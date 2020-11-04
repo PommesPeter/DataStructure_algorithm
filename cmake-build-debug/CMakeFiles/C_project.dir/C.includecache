@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Workspace/C/DataStructure_algorithm/big_interger.c
+big_interger.h
+E:/Workspace/C/DataStructure_algorithm/big_interger.h
+
+E:/Workspace/C/DataStructure_algorithm/big_interger.h
+stdio.h
+-
+stdlib.h
+-
+

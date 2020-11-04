@@ -7,11 +7,8 @@ int main() {
     B = mycreateList();
     scanf("%d", &i);
     genNumber(A, i);
-    myprintList(A);
     scanf("%d", &j);
-    printf("\n");
     genNumber(B, j);
-    myprintList(B);
     C = addNumber(A, B);
     myprintList(C);
     return 0;

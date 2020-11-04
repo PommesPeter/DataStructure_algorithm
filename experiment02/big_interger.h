@@ -5,10 +5,10 @@ struct node {//链表结点类型，包含一个存放整型数据的 data 成�
     int data;
     struct node *next;
 };
-typedef struct node* pnode;
+typedef struct node *pnode;
 
 struct node *mycreateList() {//函数功能：创建一个只有一个头结点的空链表，头节点的数据域赋值为0，并将表头结点的地址返回
-    struct node *head = (struct node *)malloc(sizeof(struct node));
+    struct node *head = (struct node *) malloc(sizeof(struct node));
     head->data = 0;
     head->next = NULL;
     return head;
@@ -54,48 +54,37 @@ void genNumber(struct node *A, int num) {//本函数用于接收输入的大数�
 
 /*------end---------*/
 }
+
 //10 1 2 3 4 5 6 7 8 9 9 2 6 5
 struct node *addNumber(struct node *A, struct node *B) {
     //此处实现函数求两数相加，并返回和值链表的表头；
     /*------begin---------*/
-    int next_num = 0;
-    int flag = 0;
+    int carry = 0;
+    int sum = 0, temp = 0;
     pnode C = mycreateList();
-    pnode C_tmp = C;
-    pnode q = B->next;
     pnode p = A->next;
-    while (p && q) {
-        int temp;
-        if (flag == 0) {
-            temp = p->data + q->data;
-            C->data = temp % 10;
-            next_num = temp / 10;
-            flag++;
+    pnode q = B->next;
+    while (p != NULL || q != NULL) {
+        if (p == NULL) {
+            sum = q->data + carry;
+            temp = sum % 10;
+            carry = sum / 10;
+            q = q->next;
+        } else if (q == NULL) {
+            sum = p->data + carry;
+            temp = sum % 10;
+            carry = sum / 10;
+            p = p->next;
         } else {
-            temp = p->data + q->data + next_num;
-            myinsertHead(C_tmp, temp % 10);
-            C_tmp = C_tmp->next;
-            next_num = temp / 10;
+            sum = p->data + q->data + carry;
+            temp = sum % 10;
+            carry = sum / 10;
+            p = p->next;
+            q = q->next;
         }
-        p = p->next;
-        q = q->next;
+        myinsertHead(C, temp);
     }
-    p = A->next;
-    q = B->next;
-    while (p != NULL) {
-        int temp = p->data + next_num;
-        myinsertHead(C_tmp, temp % 10);
-        next_num = temp / 10;
-        p = p->next;
-    }
-    while (q != NULL) {
-        int temp = q->data + next_num;
-        myinsertHead(C_tmp, temp % 10);
-        next_num = temp / 10;
-    }
-    if (next_num != 0) {
-        myinsertHead(C_tmp, next_num);
-    }
+
     return C;
 
     /*------end---------*/
