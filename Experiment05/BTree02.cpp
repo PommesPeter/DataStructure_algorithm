@@ -53,7 +53,12 @@ pTree createBiTree() {
 void Sibling(pTree T) {
     //在此处填入代码,输出结点T的所有兄弟姐妹
     /*----------begin-------------*/
-
+    if (T == nullptr) {
+        return;
+    }
+    print(T->data);
+    Sibling(T->lchild);
+    Sibling(T->rchild);
 
     /*----------end-------------*/
 }
@@ -94,10 +99,10 @@ void preOrder(pTree T) {
 int main() {
     pTree T;
     T = createBiTree(); //创建二叉树
-    preOrder(T);
-//    char ch;
-//    cin >> ch; //输入某人的代号
-//    preOrder(T, ch); //调用函数输出ch的所有兄弟姐妹
+//    preOrder(T);
+    char ch;
+    cin >> ch; //输入某人的代号
+    preOrder(T, ch); //调用函数输出ch的所有兄弟姐妹
 
     return 0;
 }  
