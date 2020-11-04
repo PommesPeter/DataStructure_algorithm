@@ -3,7 +3,7 @@
 > !Attention
 > This repo is for the code management by myself.
 
-## Datastructure Processor Tablet
+## Datastructure Schedule Tablet
 
 - [x] Experiment 1
 - [x] Experiment 2
