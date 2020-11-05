@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <algorithm>
 #include <iostream>
 
 using namespace std;
@@ -57,11 +58,12 @@ void Sibling(pTree T) {
         return;
     }
     print(T->data);
-    Sibling(T->lchild);
     Sibling(T->rchild);
 
     /*----------end-------------*/
 }
+//指针指向某个位置表示目前我位于这个地址上，所以后续连续的地址还会读取到
+
 
 /*
 函数名：preOrder
@@ -76,7 +78,7 @@ void preOrder(pTree T, DataType c) {
         return;
     }
     if (T->data == c) {
-        Sibling(T);
+        Sibling(T->rchild);
     }
     preOrder(T->lchild, c);
     preOrder(T->rchild, c);
