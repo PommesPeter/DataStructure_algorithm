@@ -142,32 +142,32 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-Experiment05/BTree02.obj: Experiment05/BTree02.cpp.obj
+experiment01/test.obj: experiment01/test.c.obj
 
-.PHONY : Experiment05/BTree02.obj
+.PHONY : experiment01/test.obj
 
 # target to build an object file
-Experiment05/BTree02.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment05/BTree02.cpp.obj
-.PHONY : Experiment05/BTree02.cpp.obj
+experiment01/test.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj
+.PHONY : experiment01/test.c.obj
 
-Experiment05/BTree02.i: Experiment05/BTree02.cpp.i
+experiment01/test.i: experiment01/test.c.i
 
-.PHONY : Experiment05/BTree02.i
+.PHONY : experiment01/test.i
 
 # target to preprocess a source file
-Experiment05/BTree02.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment05/BTree02.cpp.i
-.PHONY : Experiment05/BTree02.cpp.i
+experiment01/test.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.i
+.PHONY : experiment01/test.c.i
 
-Experiment05/BTree02.s: Experiment05/BTree02.cpp.s
+experiment01/test.s: experiment01/test.c.s
 
-.PHONY : Experiment05/BTree02.s
+.PHONY : experiment01/test.s
 
 # target to generate assembly for a file
-Experiment05/BTree02.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment05/BTree02.cpp.s
-.PHONY : Experiment05/BTree02.cpp.s
+experiment01/test.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.s
+.PHONY : experiment01/test.c.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... Experiment05/BTree02.obj
-	@echo ... Experiment05/BTree02.i
-	@echo ... Experiment05/BTree02.s
+	@echo ... experiment01/test.obj
+	@echo ... experiment01/test.i
+	@echo ... experiment01/test.s
 .PHONY : help
 
 
