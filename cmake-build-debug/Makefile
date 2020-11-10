@@ -169,6 +169,33 @@ experiment01/test.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.s
 .PHONY : experiment01/test.c.s
 
+experiment06/HaffmanT.obj: experiment06/HaffmanT.cpp.obj
+
+.PHONY : experiment06/HaffmanT.obj
+
+# target to build an object file
+experiment06/HaffmanT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj
+.PHONY : experiment06/HaffmanT.cpp.obj
+
+experiment06/HaffmanT.i: experiment06/HaffmanT.cpp.i
+
+.PHONY : experiment06/HaffmanT.i
+
+# target to preprocess a source file
+experiment06/HaffmanT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.i
+.PHONY : experiment06/HaffmanT.cpp.i
+
+experiment06/HaffmanT.s: experiment06/HaffmanT.cpp.s
+
+.PHONY : experiment06/HaffmanT.s
+
+# target to generate assembly for a file
+experiment06/HaffmanT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.s
+.PHONY : experiment06/HaffmanT.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... experiment01/test.obj
 	@echo ... experiment01/test.i
 	@echo ... experiment01/test.s
+	@echo ... experiment06/HaffmanT.obj
+	@echo ... experiment06/HaffmanT.i
+	@echo ... experiment06/HaffmanT.s
 .PHONY : help
 
 
