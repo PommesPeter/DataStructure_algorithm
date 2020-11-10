@@ -114,6 +114,7 @@ void decrypt(char src[], char key[], char dest[]) {
     for (int i = 0; i < strlen(src); i++) {
         dest[i] = (char)(src[i] + (deQueue_link(queue) - '0'));
     }
+    dest[strlen(src) - 1] = '\0';
 }
 
 int main() {
