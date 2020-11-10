@@ -1,7 +1,7 @@
 # DataStructure_Algorithm
 
 > !Attention
-> This repo is for the code management by myself.
+> This repo is for the code management by [@PommesPeter](https://github.com/PommesPeter).
 
 ## Datastructure Schedule Tablet
 
