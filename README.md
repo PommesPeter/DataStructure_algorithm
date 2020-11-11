@@ -8,8 +8,8 @@
 - [x] Experiment 1
 - [x] Experiment 2
 - [x] Experiment 3
-- [ ] Experiment 4
-- [ ] Experiment 5
+- [x] Experiment 4
+- [x] Experiment 5
 - [ ] Experiment 6
 - [ ] Experiment final
 
