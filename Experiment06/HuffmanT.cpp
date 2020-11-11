@@ -39,7 +39,6 @@ pHTree init_huffman(pHTree T, DataType *w, DataType n) {
     return T;
 }
 
-
 pHTree create_huffmantree(pHTree T, DataType *w, priority_queue<DataType, vector<DataType>, greater<DataType> > q,
                           DataType n) {
     int weight_sum;

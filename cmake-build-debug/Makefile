@@ -142,32 +142,32 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-experiment06/HuffmanT.obj: experiment06/HuffmanT.cpp.obj
+Experiment06/HuffmanT.obj: Experiment06/HuffmanT.cpp.obj
 
-.PHONY : experiment06/HuffmanT.obj
+.PHONY : Experiment06/HuffmanT.obj
 
 # target to build an object file
-experiment06/HuffmanT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj
-.PHONY : experiment06/HuffmanT.cpp.obj
+Experiment06/HuffmanT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj
+.PHONY : Experiment06/HuffmanT.cpp.obj
 
-experiment06/HuffmanT.i: experiment06/HuffmanT.cpp.i
+Experiment06/HuffmanT.i: Experiment06/HuffmanT.cpp.i
 
-.PHONY : experiment06/HuffmanT.i
+.PHONY : Experiment06/HuffmanT.i
 
 # target to preprocess a source file
-experiment06/HuffmanT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.i
-.PHONY : experiment06/HuffmanT.cpp.i
+Experiment06/HuffmanT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.i
+.PHONY : Experiment06/HuffmanT.cpp.i
 
-experiment06/HuffmanT.s: experiment06/HuffmanT.cpp.s
+Experiment06/HuffmanT.s: Experiment06/HuffmanT.cpp.s
 
-.PHONY : experiment06/HuffmanT.s
+.PHONY : Experiment06/HuffmanT.s
 
 # target to generate assembly for a file
-experiment06/HuffmanT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.s
-.PHONY : experiment06/HuffmanT.cpp.s
+Experiment06/HuffmanT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.s
+.PHONY : Experiment06/HuffmanT.cpp.s
 
 test.obj: test.cpp.obj
 
@@ -205,9 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... experiment06/HuffmanT.obj
-	@echo ... experiment06/HuffmanT.i
-	@echo ... experiment06/HuffmanT.s
+	@echo ... Experiment06/HuffmanT.obj
+	@echo ... Experiment06/HuffmanT.i
+	@echo ... Experiment06/HuffmanT.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s
