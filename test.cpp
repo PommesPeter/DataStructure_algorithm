@@ -1,248 +1,101 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-struct node
-{
-    char data;
-    struct node *next;
-};
-typedef struct node *Node;
-// 自己定义需要的栈结构，及栈基本操作函数，假设操作数都是整数
-struct stack
-{
-    Node symbol_top;
-};
-typedef struct stack *Stack;
-int result(int n, int m, int a, int x)
-{
-    int i, j = 1, last, up_2, up_1, up, down, temp;
-    if (x == n - 1)
-        return m;
-    else if (x == 1 || x == 2)
-        return a;
-    else
-    {
-        while (1)
-        {
-            last = a;
-            up_2 = a;
-            up_1 = j;
-            for (i = 2; i < n - 1; i++)
-            {
-                up = up_2 + up_1;
-                down = up_1;
-                last = last + up - down;
-                up_2 = up_1;
-                up_1 = up;
-                if (i + 1 == x)
-                    temp = last;
-            }
-            if (last == m)
-                break;
-            j++;
-        }
-    }
-    return temp;
-}
+#include <cstdio>
+#include <cstring>
+using namespace std;
 
-Node createNode(char a)
-{
-    Node newNode = (Node)malloc(sizeof(struct node));
-    newNode->next = NULL;
-    newNode->data = a;
-    return newNode;
-}
+typedef struct {
+    int weight;         // 结点权值?
+    int parent, lc, rc; // 双亲结点和左 右子节点
+} HTNode, *HuffmanTree;
 
-int priority(char symbol)
+void Select(HuffmanTree &HT, int n, int &s1, int &s2)
 {
-    if (symbol == '+' || symbol == '-')
-        return 1;
-    else if (symbol == '*')
-        return 2;
-    else if (symbol == '/')
-        return 3;
-    else
-        return -1;
-}
-void push_node(Stack L, char a)
-{
-    // 入栈
-    Node newNode = createNode(a);
-    newNode->next = L->symbol_top;
-    L->symbol_top = newNode;
-}
-void pop_stack(Stack L, Stack result)
-{
-    // 弹出所有的栈内元素
-    Node q;
-    while (L->symbol_top != NULL)
+    int minum;      // 定义一个临时变量保存最小值?
+    for(int i=1; i<=n; i++)     // 以下是找到第一个最小值
     {
-        if (L->symbol_top->data == '(')
+        if(HT[i].parent == 0)
         {
-            q = L->symbol_top;
-            L->symbol_top = L->symbol_top->next;
-            free(q);
+            minum = i;
             break;
         }
-        else
-        {
-            push_node(result, L->symbol_top->data);
-            q = L->symbol_top;
-            L->symbol_top = L->symbol_top->next;
-            free(q);
-        }
     }
-}
-
-char pop_node(Stack L)
-{
-    char temp = L->symbol_top->data;
-    Node p = L->symbol_top;
-    L->symbol_top = p->next;
-    free(p);
-    return temp;
-}
-
-Stack change(Stack result)
-{
-    char temp;
-    Stack new_result = (Stack)malloc(sizeof(struct stack));
-    while (result->symbol_top != NULL)
+    for(int i=1; i<=n; i++)
     {
-        temp = pop_node(result);
-        push_node(new_result, temp);
+        if(HT[i].parent == 0)
+            if(HT[i].weight < HT[minum].weight)
+                minum = i;
     }
-    return new_result;
-}
-
-/*
-   第二关
-   函数名：inToPost，本函数名和参数不能更改
-   函数功能：将中缀表达式转换为后缀表达式输出
-   函数参数：中缀表达式，放在字符数组中
-   返回值：返回放有后缀表达式的栈
-*/
-Stack inToPost(char *expression)
-{
-    //在此处填写代码，完成中缀表达式转换为后缀表达式并输出
-    /**********  Begin  **********/
-    int i;
-    Stack symbol = (struct stack *)malloc(sizeof(struct stack));
-    symbol->symbol_top = NULL;
-    Stack result = (struct stack *)malloc(sizeof(struct stack));
-    result->symbol_top = NULL;
-    for (i = 0; expression[i] != '\0'; i++)
+    s1 = minum;
+    // 以下是找到第二个最小值，且与第一个不同
+    for(int i=1; i<=n; i++)
     {
-        if ('0' <= expression[i] && expression[i] <= '9')
+        if(HT[i].parent == 0 && i != s1)
         {
-            while ('0' <= expression[i] && expression[i] <= '9')
-            {
-                push_node(result, expression[i]);
-                i++;
-            }
-            push_node(result, '#');
-            i--;
-            printf(" ");
-            if (expression[i + 1] == '\0')
-                pop_stack(symbol, result);
-            continue;
-        }
-        else
-        {
-            if ('(' == expression[i])
-                push_node(symbol, expression[i]);
-            else if (')' == expression[i])
-                pop_stack(symbol, result);
-            else if (symbol->symbol_top == NULL || priority(expression[i]) > priority(symbol->symbol_top->data))
-                push_node(symbol, expression[i]);
-            else
-            {
-                pop_stack(symbol, result);
-                push_node(symbol, expression[i]);
-            }
-        }
-        if (expression[i + 1] == '\0')
-            pop_stack(symbol, result);
-    }
-    return result;
-    /**********  End  **********/
-}
-//print函数用于输出后缀表达式，参数是 inToPost的返回值
-
-void print(Stack s)
-{
-    int a = 0;
-}
-
-void caculation(int num[], int *count, char a)
-{
-    int result;
-    switch (a)
-    {
-        case '+':
-            result = num[*count - 1] + num[*count];
+            minum = i;
             break;
-        case '-':
-            result = num[*count - 1] - num[*count];
-            break;
-        case '*':
-            result = num[*count - 1] * num[*count];
-            break;
-        case '/':
-            result = num[*count - 1] / num[*count];
-            break;
+        }
     }
-    *count = *count - 1;
-    num[*count] = result;
+    for(int i=1; i<=n; i++)
+    {
+        if(HT[i].parent == 0 && i != s1)
+            if(HT[i].weight < HT[minum].weight)
+                minum = i;
+    }
+    s2 = minum;
 }
-/*
-   第三关
-   函数名：calExp，本函数名和参数不能更改
-   函数功能：调用inToPost函数求解后缀表达式，并求解后缀表达式的值返回
-   函数参数：
-   返回值：无
-*/
-int calExp(char *express)
+
+void CreatHuff(HuffmanTree &HT, int *w, int n)
 {
-    //在此处填写代码，完成表达式求值并输出
-    /**********  Begin  **********/
-    Stack result = inToPost(express);
-    char str[100], temp;
-    int i = 0;
-    Node q;
-    while (result->symbol_top != NULL)
+    int m, s1, s2;
+    m = n * 2 - 1;  // 总结点的个数
+    HT = new HTNode[m + 1]; // 分配空间
+    for(int i=1; i<=n; i++) // 1 - n 存放叶子结点，初始化
     {
-        str[i] = result->symbol_top->data;
-        i++;
-        q = result->symbol_top;
-        result->symbol_top = q->next;
-        free(q);
+        HT[i].weight = w[i];
+        HT[i].parent = 0;
+        HT[i].lc = 0;
+        HT[i].rc = 0;
     }
-    str[i] = '\0';
-    for (i = 0; i < strlen(str) / 2; i++)
+    for(int i=n+1; i<=m; i++)   // 非叶子结点的初始化
     {
-        temp = str[i];
-        str[i] = str[strlen(str) - 1 - i];
-        str[strlen(str) - 1 - i] = temp;
+        HT[i].weight = 0;
+        HT[i].parent = 0;
+        HT[i].lc = 0;
+        HT[i].rc = 0;
     }
-    int num[10];
-    int count = -1;
-    int data = 0;
-    for (i = 0; str[i] != '\0'; i++)
+
+    printf("\nthe HuffmanTree is: \n");
+
+    for(int i = n+1; i<=m; i++)     // 创建非叶子节点，建哈夫曼树
+    {   // 在HT[1]~HT[i-1]的范围内选择两个parent为0且weight最小的两个结点，其序号分别赋值给 s1 s2
+        Select(HT, i-1, s1, s2);
+        HT[s1].parent = i;  // 删除这两个结点
+        HT[s2].parent = i;
+        HT[i].lc = s1;      // 生成新的树，左右子节点是 s1和s2
+        HT[i].rc = s2;
+        HT[i].weight = HT[s1].weight + HT[s2].weight;   // 新树的权�?
+        printf("%d (%d, %d)\n", HT[i].weight, HT[s1].weight, HT[s2].weight);
+    }
+    printf("\n");
+}
+
+int main2()
+{
+    HuffmanTree HT;
+
+    int *w, n, wei;
+    printf("input the number of node\n");
+    scanf("%d", &n);
+    w = new int[n+1];
+    printf("\ninput the %dth node of value\n", n);
+
+    for(int i=1; i<=n; i++)
     {
-        if ('0' <= str[i] && str[i] <= '9')
-            data = data*10 + str[i] - '0';
-        else if (str[i] == '#')
-        {
-            count++;
-            num[count] = data;
-            data = 0;
-        }
-        else
-        {
-            caculation(num, &count, str[i]);
-        }
+        scanf("%d", &wei);
+        w[i] = wei;
     }
-    return num[0];
-    /**********  End  **********/
+    CreatHuff(HT, w, n);
+
+
+
+    return 0;
 }

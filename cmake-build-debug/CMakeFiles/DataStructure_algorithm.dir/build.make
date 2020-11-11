@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\VisualDust\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = E:\JetBrain\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\VisualDust\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = E:\JetBrain\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Workspace\PommesPeter\DataStructure_algorithm
+CMAKE_SOURCE_DIR = E:\Workspace\C\DataStructure_algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug
+CMAKE_BINARY_DIR = E:\Workspace\C\DataStructure_algorithm\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DataStructure_algorithm.dir/depend.make
@@ -76,47 +76,47 @@ include CMakeFiles/DataStructure_algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DataStructure_algorithm.dir/flags.make
 
-CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj: CMakeFiles/DataStructure_algorithm.dir/flags.make
-CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj: ../experiment01/test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj"
-	D:\Enviroments\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DataStructure_algorithm.dir\experiment01\test.c.obj   -c D:\Workspace\PommesPeter\DataStructure_algorithm\experiment01\test.c
+CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj: CMakeFiles/DataStructure_algorithm.dir/flags.make
+CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj: ../experiment06/HuffmanT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure_algorithm.dir\experiment06\HuffmanT.cpp.obj -c E:\Workspace\C\DataStructure_algorithm\experiment06\HuffmanT.cpp
 
-CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.i"
-	D:\Enviroments\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Workspace\PommesPeter\DataStructure_algorithm\experiment01\test.c > CMakeFiles\DataStructure_algorithm.dir\experiment01\test.c.i
+CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Workspace\C\DataStructure_algorithm\experiment06\HuffmanT.cpp > CMakeFiles\DataStructure_algorithm.dir\experiment06\HuffmanT.cpp.i
 
-CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.s"
-	D:\Enviroments\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Workspace\PommesPeter\DataStructure_algorithm\experiment01\test.c -o CMakeFiles\DataStructure_algorithm.dir\experiment01\test.c.s
+CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Workspace\C\DataStructure_algorithm\experiment06\HuffmanT.cpp -o CMakeFiles\DataStructure_algorithm.dir\experiment06\HuffmanT.cpp.s
 
-CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj: CMakeFiles/DataStructure_algorithm.dir/flags.make
-CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj: ../experiment06/HaffmanT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj"
-	D:\Enviroments\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure_algorithm.dir\experiment06\HaffmanT.cpp.obj -c D:\Workspace\PommesPeter\DataStructure_algorithm\experiment06\HaffmanT.cpp
+CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj: CMakeFiles/DataStructure_algorithm.dir/flags.make
+CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj: ../test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure_algorithm.dir\test.cpp.obj -c E:\Workspace\C\DataStructure_algorithm\test.cpp
 
-CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.i"
-	D:\Enviroments\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\PommesPeter\DataStructure_algorithm\experiment06\HaffmanT.cpp > CMakeFiles\DataStructure_algorithm.dir\experiment06\HaffmanT.cpp.i
+CMakeFiles/DataStructure_algorithm.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure_algorithm.dir/test.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Workspace\C\DataStructure_algorithm\test.cpp > CMakeFiles\DataStructure_algorithm.dir\test.cpp.i
 
-CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.s"
-	D:\Enviroments\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\PommesPeter\DataStructure_algorithm\experiment06\HaffmanT.cpp -o CMakeFiles\DataStructure_algorithm.dir\experiment06\HaffmanT.cpp.s
+CMakeFiles/DataStructure_algorithm.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure_algorithm.dir/test.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Workspace\C\DataStructure_algorithm\test.cpp -o CMakeFiles\DataStructure_algorithm.dir\test.cpp.s
 
 # Object files for target DataStructure_algorithm
 DataStructure_algorithm_OBJECTS = \
-"CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj" \
-"CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj"
+"CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj" \
+"CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj"
 
 # External object files for target DataStructure_algorithm
 DataStructure_algorithm_EXTERNAL_OBJECTS =
 
-DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj
-DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj
+DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj
+DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/build.make
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/linklibs.rsp
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/objects1.rsp
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DataStructure_algorithm.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DataStructure_algorithm.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DataStructure_algorithm.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -129,6 +129,6 @@ CMakeFiles/DataStructure_algorithm.dir/clean:
 .PHONY : CMakeFiles/DataStructure_algorithm.dir/clean
 
 CMakeFiles/DataStructure_algorithm.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Workspace\PommesPeter\DataStructure_algorithm D:\Workspace\PommesPeter\DataStructure_algorithm D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles\DataStructure_algorithm.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Workspace\C\DataStructure_algorithm E:\Workspace\C\DataStructure_algorithm E:\Workspace\C\DataStructure_algorithm\cmake-build-debug E:\Workspace\C\DataStructure_algorithm\cmake-build-debug E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles\DataStructure_algorithm.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DataStructure_algorithm.dir/depend
 

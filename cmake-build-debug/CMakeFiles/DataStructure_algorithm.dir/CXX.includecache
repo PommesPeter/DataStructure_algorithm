@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/Workspace/PommesPeter/DataStructure_algorithm/Experiment05/BTree02.cpp
+E:/Workspace/C/DataStructure_algorithm/experiment06/HuffmanT.cpp
+iostream
+-
+cstdio
+-
 cstdlib
 -
-iostream
+queue
+-
+
+E:/Workspace/C/DataStructure_algorithm/test.cpp
+cstdio
+-
+cstring
 -
 

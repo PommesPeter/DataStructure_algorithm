@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj"
-  "CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj"
+  "CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj"
+  "CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj"
   "DataStructure_algorithm.exe"
   "DataStructure_algorithm.exe.manifest"
   "DataStructure_algorithm.pdb"
@@ -8,6 +8,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang CXX)
   include(CMakeFiles/DataStructure_algorithm.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

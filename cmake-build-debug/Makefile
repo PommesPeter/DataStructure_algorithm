@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\VisualDust\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = E:\JetBrain\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\VisualDust\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = E:\JetBrain\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Workspace\PommesPeter\DataStructure_algorithm
+CMAKE_SOURCE_DIR = E:\Workspace\C\DataStructure_algorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug
+CMAKE_BINARY_DIR = E:\Workspace\C\DataStructure_algorithm\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\VisualDust\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	E:\JetBrain\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\VisualDust\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\202.7319.72\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	E:\JetBrain\apps\CLion\ch-0\202.7660.37\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\PommesPeter\DataStructure_algorithm\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,59 +142,59 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-experiment01/test.obj: experiment01/test.c.obj
+experiment06/HuffmanT.obj: experiment06/HuffmanT.cpp.obj
 
-.PHONY : experiment01/test.obj
-
-# target to build an object file
-experiment01/test.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj
-.PHONY : experiment01/test.c.obj
-
-experiment01/test.i: experiment01/test.c.i
-
-.PHONY : experiment01/test.i
-
-# target to preprocess a source file
-experiment01/test.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.i
-.PHONY : experiment01/test.c.i
-
-experiment01/test.s: experiment01/test.c.s
-
-.PHONY : experiment01/test.s
-
-# target to generate assembly for a file
-experiment01/test.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.s
-.PHONY : experiment01/test.c.s
-
-experiment06/HaffmanT.obj: experiment06/HaffmanT.cpp.obj
-
-.PHONY : experiment06/HaffmanT.obj
+.PHONY : experiment06/HuffmanT.obj
 
 # target to build an object file
-experiment06/HaffmanT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj
-.PHONY : experiment06/HaffmanT.cpp.obj
+experiment06/HuffmanT.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj
+.PHONY : experiment06/HuffmanT.cpp.obj
 
-experiment06/HaffmanT.i: experiment06/HaffmanT.cpp.i
+experiment06/HuffmanT.i: experiment06/HuffmanT.cpp.i
 
-.PHONY : experiment06/HaffmanT.i
+.PHONY : experiment06/HuffmanT.i
 
 # target to preprocess a source file
-experiment06/HaffmanT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.i
-.PHONY : experiment06/HaffmanT.cpp.i
+experiment06/HuffmanT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.i
+.PHONY : experiment06/HuffmanT.cpp.i
 
-experiment06/HaffmanT.s: experiment06/HaffmanT.cpp.s
+experiment06/HuffmanT.s: experiment06/HuffmanT.cpp.s
 
-.PHONY : experiment06/HaffmanT.s
+.PHONY : experiment06/HuffmanT.s
 
 # target to generate assembly for a file
-experiment06/HaffmanT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.s
-.PHONY : experiment06/HaffmanT.cpp.s
+experiment06/HuffmanT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.s
+.PHONY : experiment06/HuffmanT.cpp.s
+
+test.obj: test.cpp.obj
+
+.PHONY : test.obj
+
+# target to build an object file
+test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj
+.PHONY : test.cpp.obj
+
+test.i: test.cpp.i
+
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -205,12 +205,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... experiment01/test.obj
-	@echo ... experiment01/test.i
-	@echo ... experiment01/test.s
-	@echo ... experiment06/HaffmanT.obj
-	@echo ... experiment06/HaffmanT.i
-	@echo ... experiment06/HaffmanT.s
+	@echo ... experiment06/HuffmanT.obj
+	@echo ... experiment06/HuffmanT.i
+	@echo ... experiment06/HuffmanT.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 

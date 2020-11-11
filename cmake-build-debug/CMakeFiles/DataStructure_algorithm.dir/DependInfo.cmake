@@ -1,19 +1,11 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
   "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "D:/Workspace/PommesPeter/DataStructure_algorithm/experiment01/test.c" "D:/Workspace/PommesPeter/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/experiment01/test.c.obj"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Workspace/PommesPeter/DataStructure_algorithm/experiment06/HaffmanT.cpp" "D:/Workspace/PommesPeter/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/experiment06/HaffmanT.cpp.obj"
+  "E:/Workspace/C/DataStructure_algorithm/experiment06/HuffmanT.cpp" "E:/Workspace/C/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj"
+  "E:/Workspace/C/DataStructure_algorithm/test.cpp" "E:/Workspace/C/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
