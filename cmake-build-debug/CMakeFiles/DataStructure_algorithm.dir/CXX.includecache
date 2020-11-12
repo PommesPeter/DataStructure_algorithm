@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-E:/Workspace/C/DataStructure_algorithm/experiment06/HuffmanT.cpp
+D:/Workspace/PommesPeter/DataStructure_algorithm/Experiment06/HuffmanT.cpp
 iostream
 -
 cstdio
@@ -14,5 +14,11 @@ cstdio
 cstdlib
 -
 queue
+-
+
+D:/Workspace/PommesPeter/DataStructure_algorithm/test.cpp
+cstdio
+-
+cstring
 -
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/Workspace/C/DataStructure_algorithm/Experiment06/HuffmanT.cpp" "E:/Workspace/C/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj"
-  "E:/Workspace/C/DataStructure_algorithm/test.cpp" "E:/Workspace/C/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj"
+  "D:/Workspace/PommesPeter/DataStructure_algorithm/Experiment06/HuffmanT.cpp" "D:/Workspace/PommesPeter/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj"
+  "D:/Workspace/PommesPeter/DataStructure_algorithm/test.cpp" "D:/Workspace/PommesPeter/DataStructure_algorithm/cmake-build-debug/CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
