@@ -20,21 +20,23 @@ struct node {
     int lchild, rchlid;
 };
 
-//struct tree {
-//    int max_num;
-//    int cur_num;
-//    struct node* element;
-//};
+struct tree {
+    int max_num;
+    int cur_num;
+    struct node* element;
+};
 
-typedef struct node HTree;
+typedef struct node node;
+typedef tree HTree;
 typedef HTree *pHTree;
 
 pHTree init_huffman(pHTree T, DataType *w, DataType n) {
+    T->element = new node[2 * n];
     for (int i = 0; i < n; i++) {
-        T[i].weight_value = w[i];
-        T[i].parent = 0;
-        T[i].lchild = 0;
-        T[i].rchlid = 0;
+        T->element[i].weight_value = w[i];
+        T->element[i].parent = 0;
+        T->element[i].lchild = 0;
+        T->element[i].rchlid = 0;
     }
     return T;
 }
@@ -45,20 +47,20 @@ pHTree create_huffmantree(pHTree T, DataType *w, priority_queue<DataType, vector
     T = init_huffman(T, w, n);
     for (int i = 0; i < n - 1; i++) {
         DataType temp = q.top();
-        T[i].lchild = temp;
+        T->element[i].lchild = temp;
         q.pop();
         weight_sum = temp + q.top();
-        T[i].rchlid = q.top();
+        T->element[i].rchlid = q.top();
         q.pop();
         q.push(weight_sum);
-        T[i].weight_value = weight_sum;
+        T->element[i].weight_value = weight_sum;
         if (i == 0) {
             continue;
         } else {
-            T[i - 1].parent = T[i].weight_value;
+            T->element[i - 1].parent = T->element[i].weight_value;
         }
         if (i + 1 == n - 1) {
-            T[i].parent = 0;
+            T->element[i].parent = 0;
         }
     }
     return T;
@@ -68,9 +70,9 @@ string* decode_huffmantree(pHTree T, int n) {
     auto result = new string[n];
     std::size_t m = n - 1;
     for (int i = 0;i < n - 1; i++) {
-        if (T[i].weight_value == T[i + 1].lchild && T[i].parent != 0) {
+        if (T->element[i].weight_value == T->element[i + 1].lchild && T->element[i].parent != 0) {
 
-        } else if (T[i].parent != 0){
+        } else if (T->element[i].parent != 0){
 
         } else {
             continue;
@@ -81,8 +83,8 @@ string* decode_huffmantree(pHTree T, int n) {
 
 void printf_tree(pHTree T, int n) {
     for (int i = 0; i < n - 1; i++) {
-        cout << "parent:" << T[i].parent << " lchild:" << T[i].lchild << " rchild:" << T[i].rchlid << " weight:"
-             << T[i].weight_value << endl;
+        cout << "parent:" << T->element[i].parent << " lchild:" << T->element[i].lchild << " rchild:" << T->element[i].rchlid << " weight:"
+             << T->element[i].weight_value << endl;
     }
 }
 
@@ -91,7 +93,7 @@ int main() {
     int n;
     cin >> n;
     auto weight_array = new DataType[n];
-    auto huffman_tree = new HTree[2 * n];
+    auto huffman_tree = new HTree;
     priority_queue<DataType, vector<DataType>, greater<DataType> > q;
     for (int i = 0; i < n; i++) {
         cin >> weight_array[i];

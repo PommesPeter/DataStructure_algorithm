@@ -3,5 +3,3 @@
 
 CMakeFiles/DataStructure_algorithm.dir/experiment06/HuffmanT.cpp.obj: ../experiment06/HuffmanT.cpp
 
-CMakeFiles/DataStructure_algorithm.dir/test.cpp.obj: ../test.cpp
-

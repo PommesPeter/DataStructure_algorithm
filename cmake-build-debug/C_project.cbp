@@ -89,9 +89,6 @@
 		<Unit filename="E:/Workspace/C/DataStructure_algorithm/Experiment06/HuffmanT.cpp">
 			<Option target="DataStructure_algorithm"/>
 		</Unit>
-		<Unit filename="E:/Workspace/C/DataStructure_algorithm/test.cpp">
-			<Option target="DataStructure_algorithm"/>
-		</Unit>
 		<Unit filename="E:/Workspace/C/DataStructure_algorithm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
