@@ -142,32 +142,32 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-Experiment06/HuffmanT.obj: Experiment06/HuffmanT.cpp.obj
+Experiment06/test.obj: Experiment06/test.cpp.obj
 
-.PHONY : Experiment06/HuffmanT.obj
+.PHONY : Experiment06/test.obj
 
 # target to build an object file
-Experiment06/HuffmanT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj
-.PHONY : Experiment06/HuffmanT.cpp.obj
+Experiment06/test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.obj
+.PHONY : Experiment06/test.cpp.obj
 
-Experiment06/HuffmanT.i: Experiment06/HuffmanT.cpp.i
+Experiment06/test.i: Experiment06/test.cpp.i
 
-.PHONY : Experiment06/HuffmanT.i
+.PHONY : Experiment06/test.i
 
 # target to preprocess a source file
-Experiment06/HuffmanT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.i
-.PHONY : Experiment06/HuffmanT.cpp.i
+Experiment06/test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.i
+.PHONY : Experiment06/test.cpp.i
 
-Experiment06/HuffmanT.s: Experiment06/HuffmanT.cpp.s
+Experiment06/test.s: Experiment06/test.cpp.s
 
-.PHONY : Experiment06/HuffmanT.s
+.PHONY : Experiment06/test.s
 
 # target to generate assembly for a file
-Experiment06/HuffmanT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.s
-.PHONY : Experiment06/HuffmanT.cpp.s
+Experiment06/test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.s
+.PHONY : Experiment06/test.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... Experiment06/HuffmanT.obj
-	@echo ... Experiment06/HuffmanT.i
-	@echo ... Experiment06/HuffmanT.s
+	@echo ... Experiment06/test.obj
+	@echo ... Experiment06/test.i
+	@echo ... Experiment06/test.s
 .PHONY : help
 
 

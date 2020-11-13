@@ -76,27 +76,27 @@ include CMakeFiles/DataStructure_algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DataStructure_algorithm.dir/flags.make
 
-CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj: CMakeFiles/DataStructure_algorithm.dir/flags.make
-CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj: ../Experiment06/HuffmanT.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj"
-	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure_algorithm.dir\Experiment06\HuffmanT.cpp.obj -c E:\Workspace\C\DataStructure_algorithm\Experiment06\HuffmanT.cpp
+CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.obj: CMakeFiles/DataStructure_algorithm.dir/flags.make
+CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.obj: ../Experiment06/test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Workspace\C\DataStructure_algorithm\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.obj"
+	C:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DataStructure_algorithm.dir\Experiment06\test.cpp.obj -c E:\Workspace\C\DataStructure_algorithm\Experiment06\test.cpp
 
-CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Workspace\C\DataStructure_algorithm\Experiment06\HuffmanT.cpp > CMakeFiles\DataStructure_algorithm.dir\Experiment06\HuffmanT.cpp.i
+CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\Workspace\C\DataStructure_algorithm\Experiment06\test.cpp > CMakeFiles\DataStructure_algorithm.dir\Experiment06\test.cpp.i
 
-CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Workspace\C\DataStructure_algorithm\Experiment06\HuffmanT.cpp -o CMakeFiles\DataStructure_algorithm.dir\Experiment06\HuffmanT.cpp.s
+CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\Workspace\C\DataStructure_algorithm\Experiment06\test.cpp -o CMakeFiles\DataStructure_algorithm.dir\Experiment06\test.cpp.s
 
 # Object files for target DataStructure_algorithm
 DataStructure_algorithm_OBJECTS = \
-"CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj"
+"CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.obj"
 
 # External object files for target DataStructure_algorithm
 DataStructure_algorithm_EXTERNAL_OBJECTS =
 
-DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/Experiment06/HuffmanT.cpp.obj
+DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/Experiment06/test.cpp.obj
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/build.make
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/linklibs.rsp
 DataStructure_algorithm.exe: CMakeFiles/DataStructure_algorithm.dir/objects1.rsp
