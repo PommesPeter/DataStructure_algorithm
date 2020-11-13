@@ -15,30 +15,31 @@ using namespace std;
 //8 111
 typedef int DataType;
 struct node {
-    int weight_value;
-    string code;
+    int weight;
     int parent;
-    struct node* lchild, *rchlid;
+    int lchild, rchlid;
+};
+
+struct tree {
+    int max_num;
+    int cur_num;
+    struct node* element;
 };
 
 typedef struct node node;
-typedef node *pHTree;
+typedef struct tree HTree;
+typedef HTree *pHTree;
 
-pHTree init_huffman(pHTree T, DataType n) {
-    for (int i = 0; i < 2 * n; i++) {
-        T->element[i].weight_value = 0;
+pHTree create_huffmantree(pHTree T, DataType* w, priority_queue<DataType, vector<DataType>, greater<DataType> > q, DataType n) {
+    for (int i = 0; i < 2 * n - 1; i++) {
         T->element[i].parent = 0;
         T->element[i].lchild = 0;
         T->element[i].rchlid = 0;
     }
-    return T;
-}
-
-pHTree create_huffmantree(pHTree T, priority_queue<DataType, vector<DataType>, greater<DataType> > q,
-                          DataType n) {
-    int weight_sum;
-    T = init_huffman(T, n);
-    for (int i = 0; i < n - 1; i++) {
+    for (int i = 0; i < n; i++) {
+        T->element[i].weight = w[i];
+    }
+    for (int i = n; i < 2 * n - 1; i++) {
 
     }
     return T;
@@ -48,7 +49,7 @@ string* decode_huffmantree(pHTree T, int n) {
     auto result = new string[n];
     std::size_t m = n - 1;
     for (int i = 0;i < n - 1; i++) {
-        if (T->element[i].weight_value == T->element[i + 1].lchild && T->element[i].parent != 0) {
+        if (T->element[i].weight == T->element[i + 1].lchild && T->element[i].parent != 0) {
 
         } else if (T->element[i].parent != 0){
 
@@ -59,17 +60,23 @@ string* decode_huffmantree(pHTree T, int n) {
     }
 }
 
+void printf_tree(pHTree T, int n) {
+    for (int i = 0; i < n - 1; i++) {
+        cout << "parent:" << T->element[i].parent << " lchild:" << T->element[i].lchild << " rchild:" << T->element[i].rchlid << " weight:"
+             << T->element[i].weight << endl;
+    }
+}
 
 int main() {
 
-    int n;
+    int n, w_temp;
     cin >> n;
-    auto huffman_tree = new node;
-    priority_queue<DataType, vector<DataType>, greater<DataType> > q;
-    huffman_tree->max_num = 2 * n - 1;
+    auto weight_array = new DataType[n];
+    auto huffman_tree = new HTree;
+    huffman_tree->max_num = 2 * n -1;
     huffman_tree->cur_num = 0;
+    priority_queue<DataType, vector<DataType>, greater<DataType> > q;
     for (int i = 0; i < n; i++) {
-        int w_temp;
         cin >> w_temp;
         q.push(w_temp);
     }
