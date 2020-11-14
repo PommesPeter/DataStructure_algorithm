@@ -6,3 +6,15 @@
 
 #IncludeRegexTransform: 
 
+E:/Workspace/C/DataStructure_algorithm/Experiment06/test.cpp
+cstdio
+-
+string
+-
+iostream
+-
+algorithm
+-
+bits/stdc++.h
+-
+

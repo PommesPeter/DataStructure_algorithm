@@ -86,7 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/Workspace/C/DataStructure_algorithm/Experiment06/HuffmanT.cpp">
+		<Unit filename="E:/Workspace/C/DataStructure_algorithm/Experiment06/test.cpp">
 			<Option target="DataStructure_algorithm"/>
 		</Unit>
 		<Unit filename="E:/Workspace/C/DataStructure_algorithm/CMakeLists.txt">
