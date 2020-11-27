@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-E:/Workspace/C/DataStructure_algorithm/experiment01/test.c
+E:/Workspace/C/DataStructure_algorithm/hashmap/hash.h
 stdio.h
 -
 stdlib.h
 -
+
+E:/Workspace/C/DataStructure_algorithm/hashmap/hash_03.c
+hash.h
+E:/Workspace/C/DataStructure_algorithm/hashmap/hash.h
 

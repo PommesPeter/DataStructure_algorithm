@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib>
 #include <cstring>
 
 using namespace std;
@@ -89,6 +88,10 @@ DataType deQueue_link(PLinkQueue Q) {
 
 }
 
+DataType top(PLinkQueue Q) {
+    return Q->front->info;
+}
+
 //密码加密原理描述如下：
 //将明文（一个字符串）的每个字符按照字母表后移，每个字符的后移个数由秘钥值列表确定，如果明文比密钥值列表长，可以从头再使用这个密钥值列表。
 //如明文：student，秘钥：2345
@@ -99,8 +102,7 @@ DataType deQueue_link(PLinkQueue Q) {
 //逐个访问字符串中字符的方法；
 //使用队列先进先出原理，访问秘钥列表方法有多种，本实验要求：使用循环队列相关操作。
 // 设计思路：利用出队操作，获得队首秘钥，用完该秘钥后将秘钥重新插入队尾，可实现秘钥的循环使用。
-//student 123 tvxegqu
-void decrypt(char src[], char key[], char dest[]) {
+void encrypt(char src[], char key[], char dest[]) {
     /*  参数： src 放的是原文 ； key 放的是秘钥 ； dest 放加密后的密文
       加密函数： 步骤提示
       1. 初始化一个空队列Q
@@ -112,19 +114,41 @@ void decrypt(char src[], char key[], char dest[]) {
         enQueue_link(key[i], queue);
     }
     for (int i = 0; i < strlen(src); i++) {
-        dest[i] = (char)(src[i] + (deQueue_link(queue) - '0'));
+        if (src[i] + (top(queue) - '0') > 'z') {
+            dest[i] = (char)((int)((src[i] + (deQueue_link(queue) - '0')) - 'a') % 26 + 'a');
+        } else {
+            dest[i] = (char)(src[i] + (deQueue_link(queue) - '0'));
+        }
     }
-    dest[strlen(src) - 1] = '\0';
+    dest[strlen(src)] = '\0';
 }
+
+void decrypt(char src[], char key[], char dest[]) {
+
+    auto queue = createEmptyQueue_link();
+    memset(src, '0', strlen(src));
+    for (int i = 0;i < strlen(key); i++) {
+        enQueue_link(key[i], queue);
+    }
+    for (int i = 0; i < strlen(dest); i++) {
+        if (dest[i] - (top(queue) - '0') < 'a') {
+            src[i] = (char)((int)(dest[i] - (deQueue_link(queue) - '0')) - 'a' + 'z' + 1);
+        } else {
+            src[i] = (char)(dest[i] - (deQueue_link(queue) - '0'));
+        }
+    }
+    src[strlen(dest)] = '\0';
+}
+
+
 
 int main() {
     char src[80], key[20], dest[80];
     cin >> src;
     cin >> key;
 
-    decrypt(src, key, dest);
+    encrypt(src, key, dest);
+    cout << dest << endl;
+    decrypt(dest, key, src);
     cout << dest;
 }
-
-
- 

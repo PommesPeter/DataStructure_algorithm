@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/Workspace/C/DataStructure_algorithm/Experiment06/test.cpp
-cstdio
--
-string
--
+E:/Workspace/C/DataStructure_algorithm/Experiment04/queue.cpp
 iostream
 -
-algorithm
+cstdlib
 -
-bits/stdc++.h
+cstring
 -
 

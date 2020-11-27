@@ -1,4 +1,9 @@
-//
-// Created by 43459 on 11/27/2020.
-//
+#include "hash.h"
+//-1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+int main( )
+{
+    struct hashTable *h = initHashTable_linear();
+    //printf("%d\n",h->maxNum);
+    printHashTable(h);
 
+}
