@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-E:/Workspace/C/DataStructure_algorithm/Experiment04/queue.cpp
+E:/Workspace/C/DataStructure_algorithm/Experiment06/final_huffmanT.cpp
 iostream
 -
 cstdlib
--
-cstring
 -
 
