@@ -1,14 +1,20 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
-//5 1 5 3 6 2
+#include <cstring>
+
 using namespace std;
 
 struct node {
     int weight;
     int parent;
     int lchild, rchild;
-    string code;
+};
+
+struct huffman_code {
+    int start;
+    int weight;
+    char code[10];
 };
 
 struct hTree {
@@ -18,6 +24,8 @@ struct hTree {
 typedef struct node node;
 typedef struct hTree hTree;
 typedef struct hTree* phTree;
+typedef struct huffman_code huffman_code;
+typedef huffman_code* pHuffmancode;
 
 phTree init_huffmanTree(int n) {
     size_t m = 2 * n - 1;
@@ -73,6 +81,45 @@ void find_min(phTree T, int n, int min_pos[]) {
 }
 
 
+void encoding_huffmanTree(phTree T, int n, int m) {
+    //遍历要编码的元素
+    auto T_code = new huffman_code[m];
+    huffman_code temp;
+    for (int i = 0; i < m; i++) {
+        //遍历整棵树为其编码
+        memset(T_code[i].code, '\0', sizeof(T_code[i].code));
+        temp.start = n - 1;
+        size_t node_index = i;
+        size_t node_parent = T->element[i].parent;
+        T_code[i].weight = T->element[i].weight;
+        while (node_parent != -1) {
+            //记录当前节点
+            if (T->element[node_parent].lchild == node_index) {
+                temp.code[temp.start] = '0';
+            } else {
+                temp.code[temp.start] = '1';
+            }
+            temp.start--;
+            node_index = node_parent;
+            node_parent = T->element[node_index].parent;
+        }
+        int temp_start = 0;
+        for (int j = temp.start + 1; j <= n; j++) {
+            temp_start = j;
+            T_code[i].code[j] = temp.code[j];
+        }
+        T_code[i].code[temp_start] = '\0';
+        T_code[i].start = temp.start;
+    }
+    for (int i = 0; i < n; i++) {
+        cout << T_code[i].weight << " ";
+        for (int j = T_code[i].start + 1; j < n; j++) {
+            cout << T_code[i].code[j];
+        }
+        cout << endl;
+    }
+}
+
 phTree create_huffmanTree(phTree T, int n, int m) {
 
     int min_pos[2] = {0, 0};
@@ -90,14 +137,18 @@ phTree create_huffmanTree(phTree T, int n, int m) {
 }
 
 void cout_huffmanTree(phTree T, int m) {
-    cout << "TreeIndex\tweight\tparent\tlchild\trchild" << endl;
+    cout << "index\tweight\tparent\tlchild\trchild" << endl;
     for (int i = 0;i < m; i++) {
         cout << i << "\t" << T->element[i].weight << "\t" << T->element[i].parent << "\t" << T->element[i].lchild << "\t" << T->element[i].rchild << endl;
     }
 }
 
-int main() {
+void cout_huffman_code(huffman_code* T_code, int n, int m) {
 
+}
+//5 1 5 3 6 2
+//5 2 7 4 5 19
+int main() {
     int n;
     cin >> n;
     int m = 2 * n - 1;
@@ -106,8 +157,9 @@ int main() {
         cin >> T->element[i].weight;
     }
     T = create_huffmanTree(T, n, m);
-    cout_huffmanTree(T, m);
-
-
+//    cout_huffmanTree(T, m);
+    encoding_huffmanTree(T, n, m);
+    free(T->element);
+    free(T);
     return 0;
 }
