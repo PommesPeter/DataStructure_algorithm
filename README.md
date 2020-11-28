@@ -11,6 +11,8 @@
 - [x] Experiment 4
 - [x] Experiment 5
 - [x] Experiment 6
+- [ ] Experiment 7
+- [ ] Experiment 8
 - [ ] Experiment final
 
 > Question is in educoder.net
