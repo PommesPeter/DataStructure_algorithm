@@ -157,7 +157,6 @@ void cout_huffmanTree(phTree T, int m) {
     }
 }
 
-
 //5 1 5 3 6 2
 //5 2 7 4 5 19
 int main() {
