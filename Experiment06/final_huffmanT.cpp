@@ -80,6 +80,19 @@ void find_min(phTree T, int n, int min_pos[]) {
     min_pos[1] = min;
 }
 
+void cout_huffman_code(phTree T, int root, huffman_code* T_code, int n) {
+    if (T->element[root].lchild != -1 && T->element[root].rchild != -1) {
+        cout_huffman_code(T, T->element[root].lchild, T_code, n);
+        cout_huffman_code(T, T->element[root].rchild, T_code, n);
+    } else {
+        cout << T->element[root].weight << " ";
+        for (int j = T_code[root].start + 1; j < n; j++) {
+            cout << T_code[root].code[j];
+        }
+        cout << endl;
+    }
+}
+
 
 void encoding_huffmanTree(phTree T, int n, int m) {
     //遍历要编码的元素
@@ -111,13 +124,14 @@ void encoding_huffmanTree(phTree T, int n, int m) {
         T_code[i].code[temp_start] = '\0';
         T_code[i].start = temp.start;
     }
-    for (int i = 0; i < n; i++) {
-        cout << T_code[i].weight << " ";
-        for (int j = T_code[i].start + 1; j < n; j++) {
-            cout << T_code[i].code[j];
-        }
-        cout << endl;
-    }
+    cout_huffman_code(T, m - 1, T_code, n);
+//    for (int i = 0; i < n; i++) {
+//        cout << T_code[i].weight << " ";
+//        for (int j = T_code[i].start + 1; j < n; j++) {
+//            cout << T_code[i].code[j];
+//        }
+//        cout << endl;
+//    }
 }
 
 phTree create_huffmanTree(phTree T, int n, int m) {
@@ -143,9 +157,7 @@ void cout_huffmanTree(phTree T, int m) {
     }
 }
 
-void cout_huffman_code(huffman_code* T_code, int n, int m) {
 
-}
 //5 1 5 3 6 2
 //5 2 7 4 5 19
 int main() {
