@@ -10,7 +10,7 @@
 - [x] Experiment 3
 - [x] Experiment 4
 - [x] Experiment 5
-- [ ] Experiment 6
+- [x] Experiment 6
 - [ ] Experiment final
 
 > Question is in educoder.net
