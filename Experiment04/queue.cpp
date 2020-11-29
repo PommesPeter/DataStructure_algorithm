@@ -114,11 +114,12 @@ void encrypt(char src[], char key[], char dest[]) {
         enQueue_link(key[i], queue);
     }
     for (int i = 0; i < strlen(src); i++) {
-        if (src[i] + (top(queue) - '0') > 'z') {
-            dest[i] = (char)((int)((src[i] + (deQueue_link(queue) - '0')) - 'a') % 26 + 'a');
-        } else {
-            dest[i] = (char)(src[i] + (deQueue_link(queue) - '0'));
-        }
+//        if (src[i] + (top(queue) - '0') > 'z') {
+//            dest[i] = (char)((int)((src[i] + (deQueue_link(queue) - '0')) - 'a') % 26 + 'a');
+//        } else {
+//            dest[i] = (char)(src[i] + (deQueue_link(queue) - '0'));
+//        }
+        dest[i] = (char)(src[i] + (deQueue_link(queue) - '0'));
     }
     dest[strlen(src)] = '\0';
 }
@@ -147,8 +148,8 @@ int main() {
     cin >> src;
     cin >> key;
 
-    encrypt(src, key, dest);
-    cout << dest << endl;
+//    encrypt(src, key, dest);
+//    cout << dest << endl;
     decrypt(dest, key, src);
     cout << dest;
 }

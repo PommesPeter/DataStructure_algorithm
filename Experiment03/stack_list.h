@@ -113,8 +113,8 @@ Stack inToPost(char *expression) {
     Stack num = create_stack(strlen(expression));
     Stack operators = create_stack(strlen(expression));
     for (int i = 0; expression[i] != '\0'; i++) {
-        if (expression[i] >= '0' && expression[i] <= '9') {
-            push_back(num, expression[i]);
+         if (expression[i] >= '0' && expression[i] <= '9') {
+             push_back(num, expression[i]);
             if (expression[i + 1] == '+' || expression[i + 1] == '-' || expression[i + 1] == '*' ||
                 expression[i + 1] == '/') {
                 push_back(num, '#');
@@ -123,6 +123,15 @@ Stack inToPost(char *expression) {
             push_back(operators, expression[i]);
         } else if (is_emptyStack(operators) == 1) {
             push_back(operators, expression[i]);
+        } else if (expression[i] == ')') {
+             push_back(num, '#');
+            while (top(operators) != '(') {
+                push_back(num, pop_back(operators));
+            }
+            if (top(operators) == '(') {
+                char c = (char) pop_back(operators);
+                num->element[num->top] = ' ';
+            }
         } else if (is_emptyStack(operators) == 0 && priority(top(operators)) > priority(expression[i])) {
             while (operators->top != 0) {
                 push_back(num, pop_back(operators));
@@ -130,15 +139,7 @@ Stack inToPost(char *expression) {
             }
             push_back(operators, expression[i]);
         } else if (is_emptyStack(operators) == 0 && priority(top(operators)) <= priority(expression[i])) {
-            push_back(operators, expression[i]);
-        } else if (expression[i] == ')') {
-            while (top(operators) != '(') {
-                push_back(num, pop_back(operators));
-            }
-            if (top(operators) == '(') {
-                char *c = (char *) pop_back(operators);
-                free(c);
-            }
+             push_back(operators, expression[i]);
         }
     }
     push_back(num, '#');

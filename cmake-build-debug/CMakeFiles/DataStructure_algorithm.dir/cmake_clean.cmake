@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataStructure_algorithm.dir/Experiment06/final_huffmanT.cpp.obj"
+  "CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.obj"
   "DataStructure_algorithm.exe"
   "DataStructure_algorithm.exe.manifest"
   "DataStructure_algorithm.pdb"

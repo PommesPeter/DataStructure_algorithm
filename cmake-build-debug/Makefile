@@ -142,32 +142,32 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-Experiment06/final_huffmanT.obj: Experiment06/final_huffmanT.cpp.obj
+Experiment04/queue.obj: Experiment04/queue.cpp.obj
 
-.PHONY : Experiment06/final_huffmanT.obj
+.PHONY : Experiment04/queue.obj
 
 # target to build an object file
-Experiment06/final_huffmanT.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/final_huffmanT.cpp.obj
-.PHONY : Experiment06/final_huffmanT.cpp.obj
+Experiment04/queue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.obj
+.PHONY : Experiment04/queue.cpp.obj
 
-Experiment06/final_huffmanT.i: Experiment06/final_huffmanT.cpp.i
+Experiment04/queue.i: Experiment04/queue.cpp.i
 
-.PHONY : Experiment06/final_huffmanT.i
+.PHONY : Experiment04/queue.i
 
 # target to preprocess a source file
-Experiment06/final_huffmanT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/final_huffmanT.cpp.i
-.PHONY : Experiment06/final_huffmanT.cpp.i
+Experiment04/queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.i
+.PHONY : Experiment04/queue.cpp.i
 
-Experiment06/final_huffmanT.s: Experiment06/final_huffmanT.cpp.s
+Experiment04/queue.s: Experiment04/queue.cpp.s
 
-.PHONY : Experiment06/final_huffmanT.s
+.PHONY : Experiment04/queue.s
 
 # target to generate assembly for a file
-Experiment06/final_huffmanT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment06/final_huffmanT.cpp.s
-.PHONY : Experiment06/final_huffmanT.cpp.s
+Experiment04/queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.s
+.PHONY : Experiment04/queue.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... Experiment06/final_huffmanT.obj
-	@echo ... Experiment06/final_huffmanT.i
-	@echo ... Experiment06/final_huffmanT.s
+	@echo ... Experiment04/queue.obj
+	@echo ... Experiment04/queue.i
+	@echo ... Experiment04/queue.s
 .PHONY : help
 
 

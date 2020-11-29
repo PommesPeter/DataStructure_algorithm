@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Workspace/C/DataStructure_algorithm/Experiment03/stack.c
+stack_list.h
+E:/Workspace/C/DataStructure_algorithm/Experiment03/stack_list.h
+
+E:/Workspace/C/DataStructure_algorithm/Experiment03/stack_list.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+
