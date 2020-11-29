@@ -1,6 +1,6 @@
-#include "insertsort.h"
+#include "insert_sort.h"
 
-int main(void)
+int main()
 {
     int cnt ;
     SortObject *p ;

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.obj"
+  "CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.obj"
   "DataStructure_algorithm.exe"
   "DataStructure_algorithm.exe.manifest"
   "DataStructure_algorithm.pdb"

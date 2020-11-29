@@ -142,32 +142,32 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-Experiment04/queue.obj: Experiment04/queue.cpp.obj
+sort/list_insert_sort.obj: sort/list_insert_sort.cpp.obj
 
-.PHONY : Experiment04/queue.obj
+.PHONY : sort/list_insert_sort.obj
 
 # target to build an object file
-Experiment04/queue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.obj
-.PHONY : Experiment04/queue.cpp.obj
+sort/list_insert_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.obj
+.PHONY : sort/list_insert_sort.cpp.obj
 
-Experiment04/queue.i: Experiment04/queue.cpp.i
+sort/list_insert_sort.i: sort/list_insert_sort.cpp.i
 
-.PHONY : Experiment04/queue.i
+.PHONY : sort/list_insert_sort.i
 
 # target to preprocess a source file
-Experiment04/queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.i
-.PHONY : Experiment04/queue.cpp.i
+sort/list_insert_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.i
+.PHONY : sort/list_insert_sort.cpp.i
 
-Experiment04/queue.s: Experiment04/queue.cpp.s
+sort/list_insert_sort.s: sort/list_insert_sort.cpp.s
 
-.PHONY : Experiment04/queue.s
+.PHONY : sort/list_insert_sort.s
 
 # target to generate assembly for a file
-Experiment04/queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/Experiment04/queue.cpp.s
-.PHONY : Experiment04/queue.cpp.s
+sort/list_insert_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.s
+.PHONY : sort/list_insert_sort.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... Experiment04/queue.obj
-	@echo ... Experiment04/queue.i
-	@echo ... Experiment04/queue.s
+	@echo ... sort/list_insert_sort.obj
+	@echo ... sort/list_insert_sort.i
+	@echo ... sort/list_insert_sort.s
 .PHONY : help
 
 

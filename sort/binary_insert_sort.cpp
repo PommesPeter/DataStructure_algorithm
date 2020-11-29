@@ -1,4 +1,4 @@
-#include "insertsort.h"
+#include "insert_sort.h"
 
 int main(void)
 {
@@ -7,7 +7,7 @@ int main(void)
     p = (SortObject*)malloc(sizeof(SortObject));
     linkObject *head ;
     head = (linkObject*)malloc(sizeof(linkObject));
-    head->next = NULL;
+    head->next = nullptr;
     scanf("%d",&cnt);
     p->NUM = cnt ;
     p->data = (DataType*)malloc(sizeof(DataType)*cnt);
