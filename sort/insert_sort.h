@@ -118,35 +118,33 @@ void shellSort(SortObject *Rec, int d)
   Head是表头结点，不存放数据，info是待插入数据
   要求每趟排序后 调用printLink函数，输出关键字的排列情况
   */
-void listSort(linkObject *plist ) {
+void listSort(linkObject *plist) {
     /*----begin------*/
-    linkObject* ptemp = plist, *phead, *q, *r, *t;
-    phead = (linkObject*)malloc(sizeof(linkObject));
-    phead->next = NULL;
-    while (ptemp != NULL) {
-        if (phead->next == NULL) {
-            phead->next = ptemp;
-            q = ptemp->next;
-            ptemp->next = NULL;
-            ptemp = q;
-        } else {
-            q = phead->next;
-            r = phead;
-            while (q != NULL && ptemp->info < q->info) {
-                r = q;
-                q = q->next;
-            }
-            t = ptemp->next;
-            ptemp->next = r->next;
-            r->next = ptemp;
-            ptemp = t;
+    linkObject *now, *pre, *p, *q, *head;
+    head = plist;
+    pre = head->next;
+    if (pre == NULL) return;
+    now = pre->next;
+    if (now == NULL) return;
+    while (now != NULL) {
+        q = head;
+        p = head->next;
+        while (p != now && p->info <= now->info) {
+            q = p;
+            p = p->next;
         }
-        printLink(phead);
+        if (p == now) {
+            pre = pre->next;
+            now = pre->next;
+            continue;
+        }
+        printLink(plist);
+        pre->next = now->next;
+        q->next = now;
+        now->next = p;
+        now = pre->next;
     }
-    t = phead;
-    phead = phead->next;
-    free(t);
-
+    printLink(plist);
     /*-----end------*/
 }
 
@@ -154,3 +152,9 @@ void listSort(linkObject *plist ) {
 //8 38 49 65 97 76 113 27 49
 //6 23 13 45 7 123 89
 //8 49 38 65 97 13 76 27 49
+
+//89 123 7 45 13 23
+//7 89 123 45 13 23
+//7 45 89 123 13 23
+//7 13 45 89 123 23
+//7 13 23 45 89 123
