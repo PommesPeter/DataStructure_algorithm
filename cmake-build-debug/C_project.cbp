@@ -86,10 +86,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/Workspace/C/DataStructure_algorithm/sort/insert_sort.h">
-			<Option target="DataStructure_algorithm"/>
-		</Unit>
-		<Unit filename="E:/Workspace/C/DataStructure_algorithm/sort/list_insert_sort.cpp">
+		<Unit filename="E:/Workspace/C/DataStructure_algorithm/hashmap/hash_set_Intersection.cpp">
 			<Option target="DataStructure_algorithm"/>
 		</Unit>
 		<Unit filename="E:/Workspace/C/DataStructure_algorithm/CMakeLists.txt">

@@ -142,32 +142,32 @@ DataStructure_algorithm/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/build
 .PHONY : DataStructure_algorithm/fast
 
-sort/list_insert_sort.obj: sort/list_insert_sort.cpp.obj
+hashmap/hash_set_Intersection.obj: hashmap/hash_set_Intersection.cpp.obj
 
-.PHONY : sort/list_insert_sort.obj
+.PHONY : hashmap/hash_set_Intersection.obj
 
 # target to build an object file
-sort/list_insert_sort.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.obj
-.PHONY : sort/list_insert_sort.cpp.obj
+hashmap/hash_set_Intersection.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/hashmap/hash_set_Intersection.cpp.obj
+.PHONY : hashmap/hash_set_Intersection.cpp.obj
 
-sort/list_insert_sort.i: sort/list_insert_sort.cpp.i
+hashmap/hash_set_Intersection.i: hashmap/hash_set_Intersection.cpp.i
 
-.PHONY : sort/list_insert_sort.i
+.PHONY : hashmap/hash_set_Intersection.i
 
 # target to preprocess a source file
-sort/list_insert_sort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.i
-.PHONY : sort/list_insert_sort.cpp.i
+hashmap/hash_set_Intersection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/hashmap/hash_set_Intersection.cpp.i
+.PHONY : hashmap/hash_set_Intersection.cpp.i
 
-sort/list_insert_sort.s: sort/list_insert_sort.cpp.s
+hashmap/hash_set_Intersection.s: hashmap/hash_set_Intersection.cpp.s
 
-.PHONY : sort/list_insert_sort.s
+.PHONY : hashmap/hash_set_Intersection.s
 
 # target to generate assembly for a file
-sort/list_insert_sort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/sort/list_insert_sort.cpp.s
-.PHONY : sort/list_insert_sort.cpp.s
+hashmap/hash_set_Intersection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DataStructure_algorithm.dir\build.make CMakeFiles/DataStructure_algorithm.dir/hashmap/hash_set_Intersection.cpp.s
+.PHONY : hashmap/hash_set_Intersection.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... DataStructure_algorithm
-	@echo ... sort/list_insert_sort.obj
-	@echo ... sort/list_insert_sort.i
-	@echo ... sort/list_insert_sort.s
+	@echo ... hashmap/hash_set_Intersection.obj
+	@echo ... hashmap/hash_set_Intersection.i
+	@echo ... hashmap/hash_set_Intersection.s
 .PHONY : help
 
 
