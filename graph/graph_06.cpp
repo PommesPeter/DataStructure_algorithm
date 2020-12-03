@@ -3,5 +3,5 @@
 int main(void)
 {
     GraphList *G=initGraphList( );
-    DFS_list(G);
+    Prim_list(G);
 }

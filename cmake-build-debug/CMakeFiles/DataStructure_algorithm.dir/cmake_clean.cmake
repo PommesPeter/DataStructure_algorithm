@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DataStructure_algorithm.dir/hashmap/hash_set_Intersection.cpp.obj"
+  "CMakeFiles/DataStructure_algorithm.dir/graph/graph_01.cpp.obj"
   "DataStructure_algorithm.exe"
   "DataStructure_algorithm.exe.manifest"
   "DataStructure_algorithm.pdb"

@@ -1,4 +1,8 @@
-//
-// Created by 43459 on 12/3/2020.
-//
 
+#include "graph.h"
+
+int main(void)
+{
+    GraphList *G=initGraphList( );
+    Top_list(G);
+}

@@ -57,6 +57,15 @@ GraphMatrix *initGraphMatrix( )
 {
     /*第一行输入图的类型、图的顶点数和边数，第二行输入各条边的两顶点的编号，按顶点编号从小到大的顺序输入。
   输出邻接矩阵，不需要考虑输入的数字非法情况，不输入顶点的信息*/
+    GraphList g;
+    int edge_num;
+    scanf("%d", &g.type, &g.vcount, &edge_num);
+    for (int i = 0; i < edge_num; i++) {
+        int temp;
+        g.vexs[i].edgelist = (EdgeList)malloc(sizeof(EdgeNode));
+        scanf("%c%d%d", &g.vexs[i].vertex, &g.vexs[i].edgelist->endvex);
+    }
+    for (int i = 0; i < )
 
 
 }
