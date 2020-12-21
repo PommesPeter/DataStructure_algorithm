@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    GraphList *G=initGraphList( );
+    GraphList *G=initGraphList();
     Prim_list(G);
 }

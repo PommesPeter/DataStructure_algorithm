@@ -98,6 +98,10 @@ void encoding_huffmanTree(phTree T, int n, int m) {
     //遍历要编码的元素
     auto T_code = new huffman_code[m];
     huffman_code temp;
+    if (n == 1) {
+        cout << T->element[0].weight << " 0" << endl;
+        return;
+    }
     for (int i = 0; i < m; i++) {
         //遍历整棵树为其编码
         memset(T_code[i].code, '\0', sizeof(T_code[i].code));
@@ -162,10 +166,24 @@ void cout_huffmanTree(phTree T, int m) {
 int main() {
     int n;
     cin >> n;
+    if (n < 1) {
+        cout << "TypeError: wrong data type" << endl;
+        return 0;
+    }
     int m = 2 * n - 1;
     phTree T = init_huffmanTree(n);
     for (int i = 0; i < n; i++) {
-        cin >> T->element[i].weight;
+        int temp;
+        cin >> temp;
+        if (temp < 0) {
+            cout << "TypeError: weight is a minus number..." << endl;
+            return 0;
+        }
+        if (temp >= 'A' && temp <= 'z') {
+            cout << "TypeError: weight is a character..." << endl;
+            return 0;
+        }
+        T->element[i].weight = temp;
     }
     T = create_huffmanTree(T, n, m);
 //    cout_huffmanTree(T, m);

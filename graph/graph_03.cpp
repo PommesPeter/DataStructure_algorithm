@@ -2,6 +2,6 @@
 
 int main(void)
 {
-    GraphList *G=initGraphList( );
+    GraphList *G = initGraphList();
     BFS_list(G);
 }
