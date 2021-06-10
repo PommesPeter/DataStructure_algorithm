@@ -13,6 +13,6 @@
 - [x] Experiment 6
 - [x] Experiment 7
 - [x] Experiment 8
-- [ ] Experiment final
+- [x] Experiment final
 
 > Question is in educoder.net
